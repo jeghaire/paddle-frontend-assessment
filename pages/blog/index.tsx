@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Nav, Landing, Footer } from '../components';
+import { Nav, Landing } from '../../components';
 
-const Home: NextPage = () => {
+const Blog: NextPage = () => {
   return (
     <>
       <Head>
@@ -10,10 +10,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav colored={true} />
-      <Landing />
-      <Footer />
+      <div className="text-4xl font-medium text-center p-12">Blog</div>
     </>
   );
 };
 
-export default Home;
+export default Blog;
