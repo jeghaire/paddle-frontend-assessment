@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Nav } from '../../components';
+import { Nav, Landing, Footer } from '../../components';
 
-const TermsAndCondition: NextPage = () => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
@@ -10,9 +10,10 @@ const TermsAndCondition: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav colored={true} />
-      <div className="text-4xl font-medium text-center">Terms and Conditions</div>
+      <Landing />
+      <Footer />
     </>
   );
 };
 
-export default TermsAndCondition;
+export default Home;

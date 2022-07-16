@@ -1,10 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useModalContext } from "../context/ModalContext"
+import { Modal, Contact } from '../components'
 
 
-const navMenuOptions = ['about', 'blog', 'contact us']
+const navMenuOptions = ['about', 'blog']
 
 export default function nav({ colored }) {
+  const { isOpen, openModal, closeModal } = useModalContext()
+
   return (
     <nav className={`flex items-center justify-center md:justify-start px-32 py-5 uppercase text-white ${colored ? 'bg-[#19073B]' : 'bg-white text-black'}`}>
       <Link href="/">
@@ -21,14 +25,22 @@ export default function nav({ colored }) {
       </Link>
       <ul className="hidden md:flex items-center ml-auto">
         {navMenuOptions.map(item => (
-          <li key={`link-${item}`} className="flex justify-end mr-12 last:m-0 last:py-4 last:px-8 last:rounded-full last:bg-[#271AC1]">
+          <li key={`link-${item}`} className="flex justify-end mr-12">
             <div />
             <Link href={`${item}`}>
-              <a className="p-0 text-sm font-medium transition duration-300 ease-in-out">{item}</a>
+              <a className="p-0 text-xs transition duration-300 ease-in-out">{item}</a>
             </Link>
           </li>
         ))}
+        <button onClick={openModal} className="m-0 py-4 px-8 rounded-full bg-[#271AC1] p-0 text-xs transition duration-300 outline-none ease-in-out">CONTACT US</button>
       </ul>
+
+      <Modal
+        isOpen={isOpen}
+        closeModal={closeModal}
+      >
+        <Contact />
+      </Modal>
     </nav >
   )
 }

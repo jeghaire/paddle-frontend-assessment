@@ -1,19 +1,15 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import { Nav, Landing, Footer } from '../components';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
-  return (
-    <>
-      <Head>
-        <title>Metricks Pre Launch</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Nav colored={true} />
-      <Landing />
-      <Footer />
-    </>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push('/comingsoon');
+  }, []);
+
+  return null;
 };
 
 export default Home;
