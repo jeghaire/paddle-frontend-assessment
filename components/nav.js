@@ -3,8 +3,7 @@ import Link from 'next/link'
 import { useModalContext } from "../context/ModalContext"
 import { Modal, Contact } from '../components'
 
-
-const navMenuOptions = ['about', 'blog']
+const navMenuOptions = [{ title: 'about us', link: 'about' }, { title: 'blog', link: 'blog' }]
 
 export default function nav({ colored }) {
   const { isOpen, openModal, closeModal } = useModalContext()
@@ -24,11 +23,11 @@ export default function nav({ colored }) {
         </a>
       </Link>
       <ul className="hidden md:flex items-center ml-auto">
-        {navMenuOptions.map(item => (
-          <li key={`link-${item}`} className="flex justify-end mr-12">
+        {navMenuOptions.map(({ title, link }) => (
+          <li key={`${link}`} className="flex justify-end mr-12">
             <div />
-            <Link href={`${item}`}>
-              <a className="p-0 text-xs transition duration-300 ease-in-out">{item}</a>
+            <Link href={`${link}`}>
+              <a className="p-0 text-xs transition duration-300 ease-in-out">{title}</a>
             </Link>
           </li>
         ))}

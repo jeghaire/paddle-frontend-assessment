@@ -1,15 +1,15 @@
-import { getAllCountriesIds, getCountryData } from '../../lib/repos'
+import { getAllReposIds, getRepoData } from '../../lib/repos'
 
-export default function Home({ countryData }) {
+export default function Home({ repoData }) {
   return (
     <>
-      <pre>{countryData[0]?.name?.common}</pre>
+      <pre>{repoData?.items?.name}</pre>
     </>
   )
 }
 
 export async function getStaticPaths() {
-  const paths = await getAllCountriesIds()
+  const paths = await getAllReposIds()
   return {
     paths,
     fallback: false
@@ -17,10 +17,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: id }) {
-  const countryData = await getCountryData(id)
+  const repoData = await getRepoData(id)
   return {
     props: {
-      countryData
+      repoData
     }
   }
 }

@@ -36,7 +36,7 @@ export default function Modal({
           </span>
           <Transition.Child
             as={Fragment}
-            enter="ease-out duration-300 dalay-700"
+            enter="transition ease-out duration-300 dalay-700"
             enterFrom="opacity-0 scale-95"
             enterTo="opacity-100 scale-100"
             leave="ease-in duration-200"

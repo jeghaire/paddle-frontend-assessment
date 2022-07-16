@@ -1,9 +1,13 @@
+import { useModalContext } from "../context/ModalContext"
+
 export default function landing() {
+  const { isOpen } = useModalContext()
+
   return (
     <>
-      <div className="relative min-h-screen bg-[url('/background.png')] bg-no-repeat bg-center bg-origin-border bg-local text-white">
+      <div style={isOpen ? { zoom: 0.97 } : { zoom: 1 }} className="relative min-h-screen bg-[url('/background.png')] bg-no-repeat bg-center bg-origin-border bg-local text-white transition-all duration-500 ease-in-out">
         <div className="text-center w-3/4 ssm:w-full max-w-2xl m-auto py-20 px-0 ssm:px-6 md:px-0">
-          <h1 className="text-[2.5rem] ssm:text-5xl font-bold uppercase leading-snug tracking-wide z-[1]">Something awesome is coming soon</h1>
+          <h1 className={`text-[2.5rem] ssm:text-5xl uppercase leading-snug tracking-wide transition-all duration-50 ease-in-out z-[1] ${isOpen ? 'font-medium' : 'font-bold'}`}>Something awesome is coming soon</h1>
           <p className="font-extralight leading-7 tracking-wide mt-5 whitespace-normal z-[1]">Your all-in-one affiliate marketing tracking software <span className="font-medium">track, automate</span> and <span className="font-medium">optimize</span> your campaigns.</p>
           <div className="flex flex-col ssm:flex-row items-center justify-center space-y-3 ssm:space-y-0 md:space-x-3 my-6 mx-auto w-3/4 md:w-full">
             <div className="flex flex-row items-center justify-center space-x-3">
@@ -27,7 +31,7 @@ export default function landing() {
             <input type="text" placeholder="First Name.." className="flex-1 w-full bg-transparent border-black/12 border-b placeholder:text-[#707070] text-[#090909]/91 outline-none text-xs py-1.5 px-3" />
             <input type="text" placeholder="Last Name.." className="flex-1 w-full bg-transparent border-black/12 border-b placeholder:text-[#707070] text-[#090909]/91 outline-none text-xs py-1.5 px-3 " />
           </div>
-          <div className="bg-transparent max-w-lg mx-auto mt-4 flex text-xs">
+          <div className={`bg-transparent max-w-lg mx-auto mt-4 flex text-xs transition-all duration-700 ease-in-out ${isOpen && '-translate-y-14'}`}>
             <input type="email" placeholder="Enter your email address.." className="flex items-center justify-center bg-white placeholder:text-black/80 text-black rounded-full text-[0.83rem] shadow my-[0.1em] py-5 px-6 ssm:pl-8 ssm:pr-20 border-none outline-none flex-1 z-[10]" />
             <button type="submit" className="hidden ssm:flex items-center justify-center m-0 py-[1.2rem] px-6 -ml-16 rounded-full shadow border-none outline-none bg-[#271AC1] uppercase  z-[10]">Join Our waiting list</button>
           </div>

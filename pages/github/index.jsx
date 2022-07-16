@@ -33,13 +33,11 @@ export default function Home({ allReposData, allReposData2 }) {
   )
 }
 
-export async function getStaticProps() {
-  const allReposData = await getAllReposData(1)
-  const allReposData2 = await getAllReposData(2)
+export async function getServerSideProps() {
+  const allReposData = await getAllReposData()
   return {
     props: {
-      allReposData,
-      allReposData2
+      allReposData
     }
   }
 }
