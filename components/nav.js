@@ -27,7 +27,7 @@ export default function nav({ colored }) {
           <li key={`${link}`} className="flex justify-end mr-12">
             <div />
             <Link href={`${link}`}>
-              <a className="p-0 text-xs transition duration-300 ease-in-out">{title}</a>
+              <a className="p-3 text-xs tracking-widest transition duration-300 ease-in-out">{title}</a>
             </Link>
           </li>
         ))}

@@ -24,7 +24,7 @@ export default function Modal({
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 backdrop-blur-sm" aria-hidden="true" />
+            <Dialog.Overlay className="fixed inset-0 backdrop-blur" aria-hidden="true" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}

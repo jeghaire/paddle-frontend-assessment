@@ -1,4 +1,4 @@
-import { getAllReposIds, getRepoData } from '../../lib/repos'
+import { getAllReposIds, getRepoData } from '../../../lib/repos'
 
 export default function Home({ repoData }) {
   return (

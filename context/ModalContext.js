@@ -11,7 +11,7 @@ export const useModalContext = () => {
 }
 
 export default function ModalProvider({ children }) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
 
   const closeModal = () => setIsOpen(false)
   const openModal = () => setIsOpen(true)
