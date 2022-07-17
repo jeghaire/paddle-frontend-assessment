@@ -10,15 +10,10 @@ module.exports = {
         source: '/',
         destination: '/comingsoon',
         permanent: true,
-      },
-      {
-        source: '/github',
-        destination: '/github/1',
-        permanent: true,
-      },
+      }
     ]
   },
   env: {
-    XXX_TOKEN: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    XXX_TOKEN: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
   }
 }

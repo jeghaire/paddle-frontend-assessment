@@ -1,4 +1,4 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 
 const getTimeInterval = (date) => {
   const today = new Date()
@@ -9,24 +9,22 @@ const getTimeInterval = (date) => {
 }
 
 export default function RepoCard(repo) {
-  console.log(getTimeInterval("Dec 15, 2021, 21:45:10"))
-
   return (
     <tr key={repo.name}>
       <td className="px-0 md:px-6 py-4">
         <div className="flex flex-col sm:flex-row items-center">
           <div className="flex-shrink-0 h-28 w-28 my-4 mx-5">
-            <img className="h-28 w-28 rounded-full shadow" src={repo.image} alt="" />
+            <Image className="h-28 w-28 object-contail rounded-full shadow" width={100} height={100} objectFit="contain" src={repo.image} alt="" />
           </div>
           <div>
             <div className="text-base uppercase font-medium text-gray-900">{repo.name}</div>
             <div className="text-sm text-gray-900 max-w-prose sm:w-full line-clamp-6">{repo.desc}</div>
             <div className="text-sm text-gray-500 px-6 sm:px-0 py-4 flex flex-col sm:flex-row items-center sm:justify-start">
               <div className="flex justify-start items-center">
-                <span className="px-4 py-1.5 inline-flex text-xs leading-5 font-semibold rounded-full border hover:shadow-sm shadow-lg">
+                <span className="px-4 py-1.5 inline-flex flex-nowrap text-xs leading-5 font-semibold rounded-full border hover:shadow-sm shadow-lg">
                   Stars: {repo.stars}
                 </span>
-                <span className="px-4 py-1.5 inline-flex text-xs leading-5 font-semibold rounded-full border hover:shadow-sm shadow-lg ml-3">
+                <span className="px-4 py-1.5 inline-flex flex-nowrap text-xs leading-5 font-semibold rounded-full border hover:shadow-sm shadow-lg ml-3">
                   Issues: {repo.issues}
                 </span>
               </div>

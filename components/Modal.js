@@ -12,7 +12,8 @@ export default function Modal({
       <Dialog
         as="div"
         className="fixed inset-0 z-10 overflow-y-auto"
-        onClose={closeModal}
+        // onClose={closeModal}
+        onClose={() => { }}
       >
         <div className="min-h-screen flex items-center justify-end">
           <Transition.Child
@@ -27,7 +28,6 @@ export default function Modal({
             <Dialog.Overlay className="fixed inset-0 backdrop-blur" aria-hidden="true" />
           </Transition.Child>
 
-          {/* This element is to trick the browser into centering the modal contents. */}
           <span
             className="inline-block h-screen align-middle"
             aria-hidden="true"
@@ -44,7 +44,7 @@ export default function Modal({
             leaveTo="opacity-0 scale-95"
           >
 
-            <div className="flex flex-col items-center w-3/4 sm:w-1/2 h-screen">
+            <div className="flex flex-col items-center w-3/4 sm:w-1/2">
               <Dialog.Title
                 as="h2"
                 className="text-lg font-medium leading-6 text-gray-900 dark:text-white"
@@ -60,17 +60,3 @@ export default function Modal({
     </Transition>
   )
 }
-
-
-            // {/* Full-screen scrollable container */}
-            // <div className="fixed inset-0 flex items-center justify-center p-4">
-            //   {/* Container to center the panel */}
-            //   <div className="flex min-h-full items-center justify-center">
-            //     {/* The actual dialog panel  */}
-            //     <Dialog.Panel className="mx-auto max-w-sm rounded bg-white">
-            //       <Dialog.Title>Complete your order</Dialog.Title>
-            //       {/* ... */}
-            //       {children}
-            //     </Dialog.Panel>
-            //   </div>
-            // </div>

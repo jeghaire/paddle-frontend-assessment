@@ -13,7 +13,8 @@ export default function nav({ colored }) {
       <Link href="/">
         <a className="flex flex-col items-center justify-center space-y-1 outline-none">
           <Image
-            src="/metricks.png"
+            src="/logo.svg"
+            // src="/metricks.png"
             height={30}
             width={50}
             objectFit="contain"
