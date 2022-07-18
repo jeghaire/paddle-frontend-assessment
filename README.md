@@ -3,9 +3,9 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Libraries and Dependencies](#Librariesanddependencies)
+- [Libraries and Dependencies](#Libraries and dependencies)
 - [Installation](#installation)
-- [How to use](#howtouse)
+- [How to use](#how to use)
 - [Resources](#resources)
 - [License](#license)
 - [Contributors](#contributors)
@@ -56,7 +56,7 @@ If you have any questions about the repo, open an issue or contact us directly a
 
 ## Screenshot:
 
-<img src="./Capture.PNG"/>
+<img src="./Capture.png"/>
 <img src="./capture1.png"/>
 
 Copyright 2022 &copy; Mavi
