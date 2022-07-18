@@ -3,9 +3,9 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Libraries and Dependencies](#Libraries and dependencies)
+- [Libraries and Dependencies](#Libraries)
 - [Installation](#installation)
-- [How to use](#how to use)
+- [How to use](#how)
 - [Resources](#resources)
 - [License](#license)
 - [Contributors](#contributors)
