@@ -68,7 +68,6 @@ export default function nav({ colored, active }) {
                     </Link>
                   </li>
                 ))}
-                ))}
               </ul>
             </div>
           </>
