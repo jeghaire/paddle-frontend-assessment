@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useModalContext } from "../context/ModalContext"
-import { Modal, Contact } from '../components'
+import { Modal, Contact } from '.'
 import { useEffect, useState } from 'react'
 import { HiMenuAlt4, HiX } from 'react-icons/hi'
 
