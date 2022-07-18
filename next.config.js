@@ -12,8 +12,5 @@ module.exports = {
         permanent: true,
       }
     ]
-  },
-  env: {
-    XXX_TOKEN: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
   }
 }

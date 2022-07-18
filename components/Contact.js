@@ -19,7 +19,7 @@ export default function Contact() {
           <p className="font-thin text-sm p-4 pl-0">First Name</p>
           <input
             type="text"
-            className="w-full bg-white placeholder:capitalize rounded-xl py-5 px-8 text-sm font-thin placeholder:font-thin leading-6 text-slate-700 shadow-sm outline-none lg:flex z-[100]"
+            className="w-full bg-white placeholder:capitalize rounded-xl py-5 px-8 text-sm font-thin placeholder:font-thin leading-6 text-black placeholder:text-slate-700 shadow-sm outline-none lg:flex z-[100]"
             placeholder="Enter your First name"
           />
         </div>
@@ -27,7 +27,7 @@ export default function Contact() {
           <p className="font-thin text-sm p-4 pl-0">Last Name</p>
           <input
             type="text"
-            className="w-full bg-white placeholder:capitalize rounded-xl py-5 px-8 text-sm font-thin placeholder:font-thin leading-6 text-slate-700 shadow-sm outline-none lg:flex"
+            className="w-full bg-white placeholder:capitalize rounded-xl py-5 px-8 text-sm font-thin placeholder:font-thin leading-6 text-black placeholder:text-slate-700 shadow-sm outline-none lg:flex"
             placeholder="Enter your Last name"
           />
         </div>
@@ -35,14 +35,14 @@ export default function Contact() {
           <p className="font-thin text-sm p-4 pl-0">Email Address</p>
           <input
             type="text"
-            className="w-full bg-white placeholder:capitalize rounded-xl py-5 px-8 text-sm font-thin placeholder:font-thin leading-6 text-slate-700 shadow-sm outline-none lg:flex"
+            className="w-full bg-white placeholder:capitalize rounded-xl py-5 px-8 text-sm font-thin placeholder:font-thin leading-6 text-black placeholder:text-slate-700 shadow-sm outline-none lg:flex"
             placeholder="Enter your Last name"
           />
         </div>
         <div className="w-full font-thin mt-6">
           <p className="font-thin text-sm p-4 pl-0 capitalize">Tell us what you need help with:</p>
           <textarea
-            className="w-full bg-white placeholder:capitalize rounded-xl py-5 px-8 text-sm font-thin placeholder:font-thin leading-6 text-slate-700 shadow-sm outline-none lg:flex"
+            className="w-full bg-white placeholder:capitalize rounded-xl py-5 px-8 text-sm font-thin placeholder:font-thin leading-6 text-black placeholder:text-slate-700 shadow-sm outline-none lg:flex"
             rows="8"
             cols="40"
             placeholder="Enter a topic, like channel problem.."
