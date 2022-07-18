@@ -10,7 +10,7 @@ const navMenuOptions = [
   { title: 'blog', href: 'blog' }
 ]
 
-export default function nav({ colored, active }) {
+export default function nav({ colored }) {
   const [page, setPage] = useState('/comingsoon')
   const [toggled, setToggled] = useState(false)
 

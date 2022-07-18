@@ -10,7 +10,7 @@ const About: NextPage = () => {
         <title>Metricks Pre Launch</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav colored={true} active="about" />
+      <Nav colored={true} />
       <div className="min-h-screen bg-[url('/background.png')] bg-no-repeat bg-center bg-origin-border bg-local text-white transition-all duration-500 ease-in-out">
         <div className="flex h-[70vh] w-full">
           <div className="w-4/6 h-full flex justify-end items-center">
