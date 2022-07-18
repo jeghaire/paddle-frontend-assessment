@@ -49,6 +49,7 @@ If you have any questions about the repo, open an issue or contact us directly a
 
 ## Screenshot:
 
-<img src="./Capture.PNG">
+<img src="./capture.PNG">
+<img src="./capture2.PNG">
 
 Copyright 2022 &copy; Mavi
