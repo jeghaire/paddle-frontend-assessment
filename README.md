@@ -3,9 +3,9 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Libraries and Dependencies](#Libraries)
+- [Libraries and Dependencies](#libraries%20and%20dependencies)
 - [Installation](#installation)
-- [How to use](#how)
+- [How to use](#how%20to%20use)
 - [Resources](#resources)
 - [License](#license)
 - [Contributors](#contributors)
@@ -17,7 +17,7 @@ This project was created as a solution to a job application assessment.
 
 ## Libraries and Dependencies:
 
-This project uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. React icons and tailwind's headless ui were also applied. The project is written in Javascript and partly in typescript
+This project uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. React icons and tailwind's _headless ui_ were also applied. The project is written in Javascript and partly in typescript
 
 ## Installation:
 
@@ -59,4 +59,4 @@ If you have any questions about the repo, open an issue or contact us directly a
 <img src="./Capture.png"/>
 <img src="./capture1.png"/>
 
-Copyright 2022 &copy; Mavi
+_`Copyright 2022`_ &copy; **Mavi**
