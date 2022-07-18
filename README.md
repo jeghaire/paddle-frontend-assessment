@@ -32,7 +32,7 @@ Using the project [link](https://peddle-frontend-jomavi.vercel.app/) takes you t
 
 ## Resources:
 
-The resources for this project can be found at [The Gratis-Digital-Repo](https://github.com/Gratis-digital-world/Peddle-Frontend-Assessment)
+The resources for this project can be found at the The Gratis Digital [repo](https://github.com/Gratis-digital-world/Peddle-Frontend-Assessment)
 
 ## License:
 
@@ -40,7 +40,7 @@ The resources for this project can be found at [The Gratis-Digital-Repo](https:/
 
 ### Contributors:
 
-[Eghaire P. J.](https://github.com/jeghaire)
+[Eghaire, P. Jomavi](https://github.com/jeghaire)
 
 ## Github Project:
 
