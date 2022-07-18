@@ -12,5 +12,8 @@ module.exports = {
         permanent: true,
       }
     ]
-  }
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  },
 }
