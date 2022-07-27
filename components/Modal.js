@@ -25,7 +25,7 @@ export default function Modal({
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 backdrop-blur" aria-hidden="true" />
+            <Dialog.Overlay className="fixed inset-0 bg-black/50 [@supports(backdrop-filter:blur(0))]:bg-transparent [@supports(backdrop-filter:blur(0))]:backdrop-blur" aria-hidden="true" />
           </Transition.Child>
 
           <span
@@ -36,6 +36,7 @@ export default function Modal({
           </span>
           <Transition.Child
             as={Fragment}
+            appear="true"
             enter="transition ease-out duration-300 dalay-700"
             enterFrom="opacity-0 scale-95"
             enterTo="opacity-100 scale-100"
@@ -51,7 +52,6 @@ export default function Modal({
               >
                 {title}
               </Dialog.Title>
-
               {children}
             </div>
           </Transition.Child>

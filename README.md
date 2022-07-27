@@ -22,6 +22,8 @@ This project uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tail
 ## Installation:
 
 ```
+npm i
+
 npm run dev
 
 ```
@@ -59,4 +61,4 @@ If you have any questions about the repo, open an issue or contact us directly a
 <img src="./Capture.png"/>
 <img src="./capture1.png"/>
 
-_`Copyright 2022`_ &copy; **Mavi**
+_Copyright 2022_ &copy; **Mavi**

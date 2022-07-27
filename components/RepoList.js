@@ -1,4 +1,4 @@
-import { RepoCard } from '../components'
+import { RepoCard } from '.'
 
 export default function RepoList({ repos }) {
   return (
