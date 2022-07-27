@@ -1,4 +1,4 @@
-export { default as Nav } from './nav'
+export { default as Nav } from './Nav'
 export { default as Landing } from './Landing'
 export { default as Footer } from './Footer'
 export { default as Modal } from './Modal'
