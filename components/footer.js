@@ -3,7 +3,7 @@ import { AiFillInstagram, AiFillYoutube, AiFillFacebook, AiFillLinkedin, AiFillT
 
 export default function Footer() {
   return (
-    <div className="flex -z-50 flex-col items-center justify-center py-10 px-6 bg-[url('/background.png')] bg-no-repeat bg-bottom bg-origin-border bg-local text-white text-xs ssm:text-sm font-light">
+    <div className="flex flex-col items-center justify-center py-10 px-6 bg-[url('/background.png')] bg-no-repeat bg-bottom bg-origin-border bg-local text-white text-xs ssm:text-sm font-light">
       <div className="flex items-center justify-center space-x-6 z-[1]">
         <AiFillYoutube className="w-9 h-9 opacity-[.54] hover:opacity-100 cursor-pointer" />
         <AiFillFacebook className="w-8 h-8 opacity-[.54] hover:opacity-100 cursor-pointer" />

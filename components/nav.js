@@ -63,9 +63,14 @@ export default function nav({ colored }) {
                     {/* <Link href={`${href}`}>
                       <a className={`p-3 text-xs tracking-widest transition duration-300 ease-in-out ${page === "/" + href ? 'underline underline-offset-8 text-[#FF00F7]' : ''}`}>{title}</a>
                     </Link> */}
-                    <Link href={`${href}`}>
+
+
+                    {/* main one beloe  */}
+                    {/* <Link href={`${href}`}>
                       <a className={`block w-full h-full ml-3 pb-2 pt-8 text-black text-center font-normal text-sm uppercase transition duration-300 ease-in-out hover:underline hover:underline-offset-4 ${page === "/" + href ? 'cursor-default text-[#FF00F7]' : ''}`}>{title}</a>
-                    </Link>
+                    </Link> */}
+
+                    <button onClick={openModal} className={`block w-full h-full ml-3 pb-2 pt-8 text-black text-center font-normal text-sm uppercase transition duration-300 ease-in-out hover:underline hover:underline-offset-4 ${page === "/" + href ? 'cursor-default text-[#FF00F7]' : ''}`}>Contact</button>
                   </li>
                 ))}
               </ul>
